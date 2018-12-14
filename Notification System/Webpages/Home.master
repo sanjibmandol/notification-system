@@ -1,0 +1,52 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="Webpages_Home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main" style="height:100%; width:100%; position:absolute; background-color:teal">
+      
+        <div id="freespaceUpper" style="height:5%; width:100%;"></div>
+        <div id="Contain_Main" style="height:100%; width:100%; background-color:teal; ">
+            <div id="freespaceleft" style="height:100%; width:10%;  float:left; background-color:teal">
+                 
+            </div>
+        
+            <div id="Center" style="height:100%; width:90%; background-color:seashell; ">
+                <div id="C_Header" style="height:20%; width:100%; background-color:aliceblue; text-align:center">
+
+                    <br />
+
+                    <asp:Label ID="Label1" runat="server" Text="NOTIFICATION SYSTEM" Font-Italic="True" Font-Size="40pt" Font-Names="Berlin Sans FB" ForeColor="#660066"></asp:Label>
+                </div>
+                <div id="C_Container" style="height:100%; width:100%;">
+                       <div id="Links" style="height:5%; width:100%; background-color:blanchedalmond">
+                           <%-- Links Will Be Here --%>
+                           &nbsp;&nbsp;&nbsp;
+                           <asp:HyperLink ID="HyperLink1" runat="server" Text="Send Notification" NavigateUrl="~/Webpages/Notification.aspx">
+                           </asp:HyperLink>
+                       &nbsp;&nbsp;&nbsp;
+                           <asp:HyperLink ID="HyperLink2" runat="server" Text="Admin" NavigateUrl="~/Webpages/Admin.aspx"></asp:HyperLink>
+                       &nbsp;&nbsp;&nbsp;
+                           <asp:HyperLink ID="HyperLink3" runat="server" NavigateUrl="~/Webpages/AboutUs.aspx">About Us</asp:HyperLink>
+                       &nbsp;&nbsp;&nbsp;
+                       </div>
+                            <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+                                
+                            </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            
+
+        </div>
+        
+        
+
+    </div>
+    </form>
+</body>
+</html>
